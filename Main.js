@@ -73,6 +73,8 @@ input:checked + span:before {
 }
 `;
 
+console.log("done");
+
 chrome.management.getAll(extensions => {
     const table = document.createElement("table");
     for (const {id, enabled, name, installType} of extensions) {
